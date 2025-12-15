@@ -1,0 +1,22 @@
+
+.carousel {
+  /* background: #EEE; */
+}
+
+.carousel-cell {
+  width: 90vh;
+  height: 50vh;
+  margin-right: 1rem;
+  background: #425A72;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(gallery-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}

@@ -1,0 +1,70 @@
+body {
+    /* background-image: url("bg/pattern.svg");
+    background-repeat: repeat, repeat;
+    background-color: #EDEFF1;
+    background-attachment: fixed;
+    background-size: 10%; */
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+    min-height: 5rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+}
+
+.topnav > .pad {
+    margin: auto;
+}
+
+.topnav > a {
+    margin: 1rem;
+    color: #002530;
+}
+
+.topnav> .logo {
+    flex-shrink: 0;
+}
+
+.topnav > .logo > img {
+    height: 5rem;
+    aspect-ratio: auto;
+    flex-shrink: 0;
+}
+
+.topnav > a > button {
+    background-color: #9A1A1B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1rem;
+}
+
+.content {
+    max-width: 50rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    /* box-shadow: var(--shadow-5); */
+}
+
+.duopane {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    max-width: 80rem;
+    margin: 5rem auto;
+    padding: 0 2rem;
+    align-items: center;
+    box-shadow: var(--shadow-5);
+    background-color: #FFFFFF;
+}
+
+.duopane div {
+    margin: 1rem;
+}
+
+.duopane img {
+    max-height: 70vh;
+}
