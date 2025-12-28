@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjiocare</title>
+    <title>Anjiocare | Amrutha Hospitals</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="accordion.css">
 
     <!-- the props -->
     <link rel="stylesheet" href="https://unpkg.com/open-props" />
@@ -17,14 +18,20 @@
 
     <link rel="stylesheet" href="flickity/flickity.css">
     <script src="flickity/flickity.pkgd.min.js"></script>
+    <script src="accordion.js"></script>
 
 </head>
 
 <body>
     <div class="topnav">
         <span class="logo">
-            <img class="img" src="img/banner.png">
+            <img class="img" src="img/banner.clipped.png">
         </span>
+
+        <span class="logo">
+            <img class="img" src="img/Amrutha_Hospital_logo_20251227_154508_0000.png">
+        </span>
+
         <span class="pad"></span>
         <!-- <a href="#home">Home</a> -->
         <a href="#about">About</a>
@@ -45,16 +52,28 @@
             <div class="carousel-cell"></div>
         </div>
     </div>
+    <div class="duopane" style="background-image: var(--gradient-9)">
+        <img src="img/Amrutha_Hospital_logo_20251227_154508_0000.png" alt="">
+        <div>
+            <h2>Amrutha Hospitals</h2>
+            <p>
+                Anjiocare Heart and Vascular Institute and Amrutha Hospital are associated partners located in the same building in Guntur, making it easy for patients to receive complete care in one place.
+                Anjiocare provides specialized care for heart and blood vessel problems, including heart check-ups, diagnosis, and treatment. With the support of Amrutha Hospital, patients also have access to emergency care, hospital admission, ICU, and other medical specialists whenever needed.
+                Our goal is simple — to give you safe, timely, and compassionate care, so you and your family can feel confident and comfortable throughout your treatment.
+            </p>
+        </div>
+    </div>
     <div class="duopane" id="about" style="background-image: var(--gradient-22)">
         <div>
-            <h1>Anjiocare</h1>
+            <h2>Anjiocare</h2>
             <p>AnjioCare Heart & Vascular Institute, where every heartbeat is treated with care and respect.
-            We combine advanced heart care with compassion, understanding, and personalized attention.
-            <br>Our experienced team is dedicated to guiding you from diagnosis to recovery with confidence and trust.
-            At AnjioCare, your heart health is our lifelong commitment.
-        </p>
+                We combine advanced heart care with compassion, understanding, and personalized attention.
+                <br>Our experienced team is dedicated to guiding you from diagnosis to recovery with confidence and trust.
+                At AnjioCare, your heart health is our lifelong commitment.
+            </p>
         </div>
-        <img src="undraw/doctor.svg" alt="">
+        <img src="img/anjiologo.png" alt="">
+        <!-- <img src="undraw/doctor.svg" alt=""> -->
     </div>
     <div class="duopane" id="doctor" style="background-image: var(--gradient-9)">
         <img src="img/doc.png" alt="Portrait of Dr. Anjith Vupputuri">
@@ -169,74 +188,98 @@
 
         <h1>EQUIPMENTS</h1>
 
-        <h2>Cath lab </h2>
-        <p>Our state-of-the-art Cath Lab is equipped with the latest technology to provide advanced diagnostic and
-            interventional cardiology services. It features high-resolution imaging systems, 3D mapping, and real-time
-            monitoring capabilities, allowing our specialists to perform complex procedures with precision and safety.
-            The
-            Cath Lab is designed to enhance patient comfort and streamline workflow, ensuring efficient and effective
-            care
-            for individuals with cardiovascular conditions.</p>
+        <div class="accordion">
+            <h4 class="acc-title">Cath lab </h2>
+            <p class="acc-content">Our state-of-the-art Cath Lab is equipped with the latest technology to provide advanced diagnostic and
+                interventional cardiology services. It features high-resolution imaging systems, 3D mapping, and real-time
+                monitoring capabilities, allowing our specialists to perform complex procedures with precision and safety.
+                The
+                Cath Lab is designed to enhance patient comfort and streamline workflow, ensuring efficient and effective
+                care
+                for individuals with cardiovascular conditions.</p>
+        </div>
 
-        <h2>Imaging Technology</h2>
-        <p>We utilize cutting-edge imaging technology, including 3D echocardiography, cardiac MRI, and CT angiography,
-            to
-            obtain detailed views of the heart and vascular system. These advanced imaging modalities enable accurate
-            diagnosis, treatment planning, and monitoring of heart diseases, enhancing our ability to deliver
-            personalized
-            care.</p>
-        <h2>intra vascular ultrasound</h2>
-        <p>Intravascular Ultrasound (IVUS) is a cutting-edge imaging technology used in our Cath Lab to provide
-            detailed,
-            real-time images of the inside of blood vessels. This advanced technique allows our cardiologists to assess
-            the
-            extent of arterial blockages, evaluate plaque characteristics, and guide interventional procedures with
-            greater
-            precision. By utilizing IVUS, we enhance the accuracy of diagnoses and improve treatment outcomes for our
-            patients with cardiovascular conditions.</p>
-        <h2>optical coherence tomography</h2>
-        <p>Optical Coherence Tomography (OCT) is an advanced imaging technology employed in our Cath Lab to obtain
-            high-resolution, cross-sectional images of blood vessels. This technique uses light waves to capture
-            detailed
-            images of the vessel walls, allowing our cardiologists to assess plaque morphology, stent placement, and
-            vessel
-            healing with exceptional clarity. OCT enhances our ability to make informed decisions during interventional
-            procedures, ultimately improving patient outcomes in cardiovascular care.</p>
-        <h2>intra aortic balloon pump</h2>
-        <p>The Intra-Aortic Balloon Pump (IABP) is a mechanical device used in our Cath Lab to support patients with
-            severe
-            heart conditions. It consists of a balloon that is inserted into the aorta and inflates and deflates in sync
-            with the cardiac cycle. This action helps to increase blood flow to the coronary arteries and reduce the
-            workload on the heart, improving oxygen delivery to vital organs. The IABP is particularly beneficial for
-            patients experiencing cardiogenic shock or undergoing high-risk cardiac procedures, providing critical
-            support
-            during recovery.</p>
-        <h2>Management of Calcified Coronaries</h2>
-        <p>At AnjioCare Heart & Vascular Institute, we specialize in the management of calcified coronary arteries using
-            advanced techniques and technologies. Our approach includes the use of intravascular lithotripsy (IVL) to
-            safely
-            fracture calcium deposits, allowing for optimal stent placement and improved blood flow. We also employ
-            rotational atherectomy and specialized balloon angioplasty to effectively treat heavily calcified lesions.
-            Our
-            experienced team tailors treatment plans to each patient's unique condition, ensuring the best possible
-            outcomes
-            in the management of calcified coronary disease.</p>
-        <h3>Rota Pro-Boston scientific</h3>
-        <p>The Rota Pro system by Boston Scientific is an advanced rotational atherectomy device used in our Cath Lab to
-            treat heavily calcified coronary arteries. This innovative technology utilizes a high-speed rotating burr to
-            precisely remove calcium deposits from the arterial walls, facilitating optimal stent placement and
-            improving
-            blood flow. The Rota Pro system is designed to enhance procedural safety and efficacy, allowing our
-            cardiologists to effectively manage complex coronary lesions and improve patient outcomes in cardiovascular
-            care.</p>
-        <h3>Intravascular lithotripsy</h3>
-        <p>Intravascular Lithotripsy (IVL) is a cutting-edge technology used in our Cath Lab to treat calcified coronary
-            arteries. This innovative technique employs sonic pressure waves to fracture calcium deposits within the
-            arterial walls, allowing for improved vessel compliance and optimal stent deployment. IVL is minimally
-            invasive
-            and enhances procedural safety, making it an effective option for patients with heavily calcified lesions.
-            By
-            utilizing IVL, we aim to improve blood flow and overall cardiovascular health for our patients.</p>
+        <div class="accordion">
+            <h4 class="acc-title">Imaging Technology</h2>
+            <p class="acc-content">We utilize cutting-edge imaging technology, including 3D echocardiography, cardiac MRI, and CT angiography,
+                to
+                obtain detailed views of the heart and vascular system. These advanced imaging modalities enable accurate
+                diagnosis, treatment planning, and monitoring of heart diseases, enhancing our ability to deliver
+                personalized
+                care.</p>
+        </div>
+
+        <div class="accordion">
+            <h4 class="acc-title">Intra Vascular Ultrasound</h2>
+            <p class="acc-content">Intravascular Ultrasound (IVUS) is a cutting-edge imaging technology used in our Cath Lab to provide
+                detailed,
+                real-time images of the inside of blood vessels. This advanced technique allows our cardiologists to assess
+                the
+                extent of arterial blockages, evaluate plaque characteristics, and guide interventional procedures with
+                greater
+                precision. By utilizing IVUS, we enhance the accuracy of diagnoses and improve treatment outcomes for our
+                patients with cardiovascular conditions.</p>
+        </div>
+
+        <div class="accordion">
+            <h4 class="acc-title">Optical Coherence Tomography</h4>
+            <p class="acc-content">Optical Coherence Tomography (OCT) is an advanced imaging technology employed in our Cath Lab to obtain
+                high-resolution, cross-sectional images of blood vessels. This technique uses light waves to capture
+                detailed
+                images of the vessel walls, allowing our cardiologists to assess plaque morphology, stent placement, and
+                vessel
+                healing with exceptional clarity. OCT enhances our ability to make informed decisions during interventional
+                procedures, ultimately improving patient outcomes in cardiovascular care.</p>
+        </div>
+
+        <div class="accordion">
+            <h4 class="acc-title">Intra-Aortic Balloon Pump</h2>
+            <p class="acc-content">The Intra-Aortic Balloon Pump (IABP) is a mechanical device used in our Cath Lab to support patients with
+                severe
+                heart conditions. It consists of a balloon that is inserted into the aorta and inflates and deflates in sync
+                with the cardiac cycle. This action helps to increase blood flow to the coronary arteries and reduce the
+                workload on the heart, improving oxygen delivery to vital organs. The IABP is particularly beneficial for
+                patients experiencing cardiogenic shock or undergoing high-risk cardiac procedures, providing critical
+                support
+                during recovery.</p>
+        </div>
+
+        <div class="accordion">
+            <h4 class="acc-title">Management of Calcified Coronaries</h2>
+            <p class="acc-content">At AnjioCare Heart & Vascular Institute, we specialize in the management of calcified coronary arteries using
+                advanced techniques and technologies. Our approach includes the use of intravascular lithotripsy (IVL) to
+                safely
+                fracture calcium deposits, allowing for optimal stent placement and improved blood flow. We also employ
+                rotational atherectomy and specialized balloon angioplasty to effectively treat heavily calcified lesions.
+                Our
+                experienced team tailors treatment plans to each patient's unique condition, ensuring the best possible
+                outcomes
+                in the management of calcified coronary disease.</p>
+        </div>
+
+        <div class="accordion">
+            <h4 class="acc-title">Rota Pro-Boston scientific</h4>
+            <p class="acc-content">The Rota Pro system by Boston Scientific is an advanced rotational atherectomy device used in our Cath Lab to
+                treat heavily calcified coronary arteries. This innovative technology utilizes a high-speed rotating burr to
+                precisely remove calcium deposits from the arterial walls, facilitating optimal stent placement and
+                improving
+                blood flow. The Rota Pro system is designed to enhance procedural safety and efficacy, allowing our
+                cardiologists to effectively manage complex coronary lesions and improve patient outcomes in cardiovascular
+                care.</p>
+        </div>
+
+        <div class="accordion">
+            <h4 class="acc-title">Intravascular lithotripsy</h4>
+            <p class="acc-content">Intravascular Lithotripsy (IVL) is a cutting-edge technology used in our Cath Lab to treat calcified coronary
+                arteries. This innovative technique employs sonic pressure waves to fracture calcium deposits within the
+                arterial walls, allowing for improved vessel compliance and optimal stent deployment. IVL is minimally
+                invasive
+                and enhances procedural safety, making it an effective option for patients with heavily calcified lesions.
+                By
+                utilizing IVL, we aim to improve blood flow and overall cardiovascular health for our patients.</p>
+        </div>
+
+        <hr>
 
         <h2>Procedures</h2>
 

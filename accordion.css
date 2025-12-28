@@ -1,0 +1,22 @@
+.accordion {
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.accordion > .acc-title {
+    cursor: pointer;
+}
+
+.accordion > .acc-title::before {
+    content: "> ";
+}
+
+.accordion > .acc-content {
+    transition: height 0.3s ease;
+    visibility: hidden;
+    /* overflow: auto; */
+}
+
+.accordion > .acc-content.acc-show {
+    visibility: visible;
+}
